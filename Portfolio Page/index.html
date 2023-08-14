@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="fsd.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <div id="header">
+        <div class="cont">
+            <nav>
+                <img src="img/myphotosign_193105_w.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Myfavourites">My Favourites</a></li>
+                    <li><a href="https://www.instagram.com/yeshu_564/">Photography</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                </div>
+            </div>
+        </div>
+<!-----------about-------->        
+        <div id="about">
+            <div class="cont">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/IMG_8253.JPG" class="img">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1> 
+                        <p>Hey yo, I am Yeshwanth. You might not know me much. You wanted to know that's why you're here.
+                            So let me tell you about myself. I study at Amrita University. I was living at Chittoor until I entered this University.
+                            I am here in this city to spend the next 4 years living in a different culture.
+                        </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>C, Java</li>
+                                <li><span>Sports</span><br>Cricket,Volleyball❤️</li>
+                                <li><span>Cinematography</span><br>Made many YouTube videos</li>
+                                <li><span>Singing</span><br>Singing songs</li>
+                            </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br> Undergraduate at Amrita University majoring AIE </li>
+                            <li><span>2020-2022</span><br> Passed out from Sri Chaitanya Chittoor</li>
+                            <li><span>2008-2020</span><br> Primary and Secondary Educatio at Camford High School</li>
+
+                        </ul>
+                      </div>
+                </div>
+            </div>
+     </div>
+ </div>
+ <!--------My Favs------>
+ <div id="Myfavourites">
+    <div class="cont">
+        <h1 class="sub-title">My Favourites</h1>
+        <div class="favourites-list">
+        <div>
+            <i class="fa-solid fa-camera"></i>
+            <h2>Photography</h2>
+            <p class="good">Love towards Cameras are inevitable <br>
+            Always a Canon boy..</p>
+        </div>
+        <div>
+            <i class="fas fa-biking"></i>
+            <h2>Bikes</h2>
+            <p class="good">"Long rides make your life long.."<br>
+            Always RE Continental GT-650.
+            </p>
+    </div>
+        <div>
+            <i class="fas fa-quidditch"></i>
+            <h2>Sports</h2>
+            <p class="good">"My stress burster thing"<br>
+           Volleyball❤️ for life..</p>
+        </div>
+    </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div id="contact">
+    <div class="cont">
+        <div class="row">
+            <div class="contact-centre">
+                <h1 class="sub-title">My Contacts</h1>
+                <p><i class="fas fa-paper-plane"></i><a href="mailto:email@example.com?subject=Mail from our Website" style="text-decoration: none; color: white;">yaswanthbalaji11@gmail.com</a></p>
+                <p><i class="fas fa-phone-square-alt"></i>9100239635</p><br><br>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yeshu_564/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@yeshu_56"><i class="fa-brands fa-youtube"></i>
+                    <a href="https://www.linkedin.com/in/yeshwanth-balaji-79612a1b9/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/YESHU_564"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="copyright">
+        <p>Copyright © Yeshwanth. Made by Yeshwanth ❤️ <i class="fas fa-heart"></i> </p>
+    </div>
+</div>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+<script>
+      var sidemenu = document.getElementById("sidemenu");
+      
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    font-family: Ubuntu,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000000 ;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/IMG_8176.JPG  );
+    background-size: cover;
+    background-position: center;
+}
+.cont{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0ba3df;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: 0.5px;
+    resize: 100px 100px 50px 50px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:#0ba3df;
+}
+#about{
+    padding: 60px 0;
+    color: #ababab;
+}
+.img{
+    box-sizing: content-box;
+    max-height: 600px;
+    max-width: fit-content;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+     flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0ba3df;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #0ba3df;
+    font-size:14px;
+}
+.tab-contents{
+    display: none;
+    }
+.tab-contents.active-tab{
+    display:block;
+}
+/*----------My Favourites--------*/
+#Myfavourites{
+        padding: 30px 0;
+}
+.favourites-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.favourites-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.favourites-list div i{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.favourites-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.favourites-list div a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.favourites-list div:hover{
+   font-weight: bold;
+   color: #212121;
+   background: #0ba3df;
+   transform: translateY(-10px); 
+}
+.good{
+    font-size: 18px;
+}
+/*----------contacts--------*/
+.contact-centre{
+     flex-basis: 50%;
+}
+.contact-centre p{
+    margin-top: 30px;
+    text-decoration: none;
+}
+.contact-centre p i{
+    color: #0ba3df;
+    margin-right: 15px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #0ba3df;
+    transform: translate(-5px);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #f60b61;
+}
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(img/IMG_8236.JPG);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .logo{
+        padding-right: 10%;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #0ba3df;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px; 
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+</style>
+</body>
+</html>
